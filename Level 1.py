@@ -200,13 +200,13 @@
 #Тип b: <class 'bool'>
 #Тип c: <class 'float'>
 
-#a = "25"
-#b = True
-#c = 100.5
+a = "25"
+b = True
+c = 100.5
 
-#print("Тип a:", type(a))
-#print("Тип b:", type(b))
-#print("Тип c:", type(c))
+print("Тип a:", type(a))
+print("Тип b:", type(b))
+print("Тип c:", type(c))
 
 #Задача 3 (Операции сравнения)
 #Даны переменные:
