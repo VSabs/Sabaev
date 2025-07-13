@@ -153,7 +153,7 @@ from ctypes import HRESULT
 #Дана строка:
 
 #python
-word = "Тестировщик"
+#word = "Тестировщик"
 #Выведи на экран:
 
 #Первый символ,
@@ -161,12 +161,25 @@ word = "Тестировщик"
 #Средний символ (подсказка: используй len()),
 
 #Последний символ.
-result = word[0]
+#result = word[0]
+#print(result)
+
+#result1 = len(word) // 2
+#result1 = word[result1]
+#print(result1)
+
+#result2 = word[-1]
+#print(result2)
+
+#Задача 15 (Конкатенация строк)
+#Даны переменные:
+
+#python
+start = "Начало"
+end = "конец"
+
+#Создай новую строку через конкатенацию с пробелом между словами:
+#"Начало конец"
+
+result = start + " " + end
 print(result)
-
-result1 = len(word) // 2
-result1 = word[result1]
-print(result1)
-
-result2 = word[-1]
-print(result2)
