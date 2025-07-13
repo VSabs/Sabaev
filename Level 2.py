@@ -29,7 +29,7 @@
 #Дана строка:
 
 #python
-s = "  hello, World!  "
+#s = "  hello, World!  "
 #Примени к ней три метода последовательно:
 
 #Убери пробелы в начале и конце строки,
@@ -38,5 +38,16 @@ s = "  hello, World!  "
 
 #Замени World на Python.
 
-result = s.strip().upper().replace("WORLD", "Python")
+#result = s.strip().upper().replace("WORLD", "Python")
+#print(result)
+
+#Задача 5 (Конкатенация строк)
+#Даны переменные:
+
+#python
+part1 = "Авто"
+part2 = "матизация"
+#Соедини их через конкатенацию (+) и выведи результат.
+
+result = part1 + part2
 print(result)
