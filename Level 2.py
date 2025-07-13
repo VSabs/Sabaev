@@ -273,7 +273,7 @@ from ctypes import HRESULT
 #Дана строка:
 
 #python
-word = "Программист"
+#word = "Программист"
 #Выведи:
 
 #Первый символ,
@@ -282,9 +282,20 @@ word = "Программист"
 
 #Последний символ.
 
-result = word[0]
-result1 = word[2]
-result2 = word[-1]
+#result = word[0]
+#result1 = word[2]
+#result2 = word[-1]
+#print(result)
+#print(result1)
+#print(result2)
+
+#Задача 23 (Конкатенация строк)
+#Даны переменные:
+
+#python
+part1 = "авто"
+part2 = "матизация"
+#Соедини их без пробела и выведи результат.
+
+result = part1 + part2
 print(result)
-print(result1)
-print(result2)
