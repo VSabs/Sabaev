@@ -206,4 +206,17 @@ from ctypes import HRESULT
 
 #Выведи их типы через type() в одну строку.
 
-print(type(" "), type("100"), type("Виталя"))
+#print(type(" "), type("100"), type("Виталя"))
+
+#Задача 18 (F-строки)
+
+#Даны переменные:
+
+#python
+product = "яблоки"
+price = 85
+#Создай строку через f-строку в формате:
+#"Цена на яблоки: 85 руб."
+
+text = f"Цена на {product}: {price} руб."
+print(text)
