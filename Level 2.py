@@ -75,4 +75,20 @@ from ctypes import HRESULT
 
 #Выведи их типы через type() в одну строку (через пробел).
 
-print(type(" "), type("123"), type('Виталий'))
+#print(type(" "), type("123"), type('Виталий'))
+
+#Задача 8 (Методы строк)
+#Дана строка:
+
+#python
+s = "pYtHoN"
+#Сделай следующее:
+
+#Переведи её в нижний регистр,
+
+#Замени "python" на "Python" (с заглавной P),
+
+#Выведи результат.
+
+result = s.lower().replace("python", "Python")
+print(result)
