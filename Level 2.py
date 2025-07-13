@@ -119,7 +119,7 @@ from ctypes import HRESULT
 #Дана строка:
 
 #python
-s = "  Hello, World!  "
+#s = "  Hello, World!  "
 #Примени к ней методы, чтобы:
 
 #Убрать пробелы в начале и конце строки
@@ -130,5 +130,21 @@ s = "  Hello, World!  "
 
 #Выведи итоговую строку.
 
-result = s.strip().lower().replace("world", "Python")
+#result = s.strip().lower().replace("world", "Python")
+#print(result)
+
+#Задача 13 (Срезы строк)
+
+#Дана строка:
+
+#python
+text = "Программирование"
+#Выведи на экран срез: первые 6 символов и последние 4 символа, соединенные через дефис.
+
+#Пример вывода:
+
+#text
+#Програм-ние
+
+result = text[0:6] + "-" + text [-4:]
 print(result)
