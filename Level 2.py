@@ -81,7 +81,7 @@ from ctypes import HRESULT
 #Дана строка:
 
 #python
-s = "pYtHoN"
+#s = "pYtHoN"
 #Сделай следующее:
 
 #Переведи её в нижний регистр,
@@ -90,5 +90,15 @@ s = "pYtHoN"
 
 #Выведи результат.
 
-result = s.lower().replace("python", "Python")
+#result = s.lower().replace("python", "Python")
+#print(result)
+
+#Задача 9 (Срезы + конкатенация)
+#Дана строка:
+
+#python
+text = "автоматизация"
+#Выведи первые 5 символов и последние 3 символа, соединённые через дефис (например: "автом-ция").
+
+result = text [0:5]  + "-" + text[-3:]
 print(result)
