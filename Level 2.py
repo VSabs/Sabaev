@@ -311,4 +311,3 @@ from ctypes import HRESULT
 
 #Выведи их типы через type() в одну строку через пробел.
 
-print(type(""), type("42"), type("С любым словом"))
