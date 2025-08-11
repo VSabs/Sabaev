@@ -311,3 +311,60 @@ from ctypes import HRESULT
 
 #Выведи их типы через type() в одну строку через пробел.
 
+
+# Задача 1 (Создание строки)
+# Напиши код, который создает строку "Hello, Python!" и выводит ее на экран.
+#
+# word = "Hello, Python!"
+# print(word)
+
+
+# Задача 2 (Доступ к символам)
+# Дана строка "Automation". Выведи третий символ этой строки.
+
+# str_automation = "Automation"
+# print(str_automation[2])
+
+
+# Задача 3 (Срезы)
+# Дана строка "Programming". Выведи срез с 3-го по 7-й символ включительно.
+
+# str_Programming = "Programming"
+# print(str_Programming[2:7])
+
+
+# Задача 4 (Получение длины строки)
+# Дана строка "Testing". Напиши код, который выводит её длину.
+
+# test = "Testing"
+# print(len(test))
+
+
+# Задача 5 (Конкатенация строк)
+# Объедини строки "Hello, " и "world!" в одну и выведи результат.
+
+# text = "Hello, "
+# text2 = "world!"
+# print(text + text2)
+
+
+# Задача 6 (F-строки)
+# Даны переменные:
+#
+# python
+# name = "Alice"
+# age = 25
+# Создай строку с помощью f-строки, чтобы получилось:
+# "Alice is 25 years old".
+
+# name = "Alice"
+# age = 25
+# result = f"{name} is {age} years old"
+# print(result)
+
+# Задача 7 (Базовые методы строк)
+# Дана строка: " python ".
+# Удали лишние пробелы в начале и конце строки, затем выведи результат.
+
+# text = " python "
+# print(text.strip())
