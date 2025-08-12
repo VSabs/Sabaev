@@ -384,6 +384,31 @@
 # account.withdraw(300)
 # account.check_balance()
 
+# Задача 1 (Конструктор класса __init__ и атрибуты)
+# Создай класс Book:
+# С конструктором, принимающим 3 параметра: title (название), author (автор), pages (количество страниц)
+# Инициализируй эти параметры как атрибуты объекта
+# Добавь метод describe(), который возвращает строку: "[Название] by [Автор], [Страницы] pages"
+# Проверь работу:
+# Создай объект Book("Python Basics", "A. Smith", 200)
+# Вызови describe() и выведи результат
+
+# class Book:
+#
+#     def __init__(self, title, author, pages):
+#         self.title = title
+#         self.author = author
+#         self.pages = pages
+#
+#     def describe(self):
+#         return f"{self.title} by {self.author}, {self.pages}"
+#
+#
+# my_book = Book("Моя книга", "Сабаев", 41)
+# print(my_book.describe())
+
+
+
 
 
 
