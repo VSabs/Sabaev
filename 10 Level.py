@@ -47,6 +47,36 @@
 # my_phone.unlock()
 # my_phone.turn_on()
 
+# Задача 3 (Многоуровневое наследование)
+# Создай иерархию классов:
+# Базовый класс Animal с методом eat() (выводит "Eating...")
+# Дочерний класс Dog (наследует Animal), добавляет метод bark() ("Woof!")
+# Класс Puppy (наследует Dog), переопределяет bark() ("Yip-yip!")
+# Проверь:
+# Создай объект Puppy
+# Вызови все доступные методы (eat() и bark())
+
+# class Animal:
+#
+#     def eat(self):
+#         print("Eating...")
+#
+#
+# class Dog(Animal):
+#
+#     def bark(self):
+#         print("Woof!")
+#
+#
+# class Puppy(Dog):
+#
+#     def bark(self):
+#         print("Yip-yip!")
+#
+#
+# my_puppy = Puppy()
+# my_puppy.eat()
+# my_puppy.bark()
 
 
 
