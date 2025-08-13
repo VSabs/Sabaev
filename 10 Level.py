@@ -97,7 +97,27 @@ class Dog(Animal):
 my_dog = Dog()
 my_dog.make_sound()
 
+# Задача 2 (Использование super())
+# Создай класс Vehicle с методом __init__(), который принимает max_speed и сохраняет его в атрибут. Затем создай класс Car, который наследуется от Vehicle и добавляет атрибут brand. В Car.__init__() используй super(), чтобы не дублировать код инициализации max_speed.
+#
+# Проверь работу, создав экземпляр Car с параметрами max_speed=200 и brand="Toyota", затем выведи его атрибуты.
 
+class Vehicle:
+
+    def __init__(self, max_speed):
+        self.max_speed = max_speed
+
+
+class Car(Vehicle):
+
+    def __init__(self, max_speed, brand):
+     super().__init__(max_speed)
+     self.brand = brand
+
+
+my_cars = Car(max_speed=200, brand="Toyota")
+print(my_cars.max_speed)
+print(my_cars.brand)
 
 
 
