@@ -4,21 +4,21 @@
 # Дочерний класс Car, который наследует Vehicle и переопределяет start_engine(), добавляя к исходному сообщению ", car is ready!" (итог: "Engine started, car is ready!").
 # Проверь работу, создав объект Car и вызвав его метод.
 
-# class Vehicle:
-#
-#     def start_engine(self):
-#         return f"Engine started"
-#
-#
-# class Car(Vehicle):
-#
-#     def start_engine(self):
-#         parament_message = super().start_engine()
-#         return  parament_message + ", car is ready!"
-#
-#
-# my_car = Car()
-# print(my_car.start_engine())
+class Vehicle:
+
+    def start_engine(self):
+        return f"Engine started"
+
+
+class Car(Vehicle):
+
+    def start_engine(self):
+        parament_message = super().start_engine()
+        return  parament_message + ", car is ready!"
+
+
+my_car = Car()
+print(my_car.start_engine())
 
 # Задача 2 (Наследование — расширение функционала)
 # Создай:
@@ -31,21 +31,21 @@
 # Создай объект Smartphone
 # Вызови оба метода (turn_on() и unlock())
 
-# class Device:
-#
-#     def turn_on(self):
-#         print("Device is turned on")
-#
-#
-# class Smartphone(Device):
-#
-#     def unlock(self):
-#         print("Screen unlocked")
-#
-#
-# my_phone = Smartphone()
-# my_phone.unlock()
-# my_phone.turn_on()
+class Device:
+
+    def turn_on(self):
+        print("Device is turned on")
+
+
+class Smartphone(Device):
+
+    def unlock(self):
+        print("Screen unlocked")
+
+
+my_phone = Smartphone()
+my_phone.unlock()
+my_phone.turn_on()
 
 # Задача 3 (Многоуровневое наследование)
 # Создай иерархию классов:
@@ -56,27 +56,27 @@
 # Создай объект Puppy
 # Вызови все доступные методы (eat() и bark())
 
-# class Animal:
-#
-#     def eat(self):
-#         print("Eating...")
-#
-#
-# class Dog(Animal):
-#
-#     def bark(self):
-#         print("Woof!")
-#
-#
-# class Puppy(Dog):
-#
-#     def bark(self):
-#         print("Yip-yip!")
-#
-#
-# my_puppy = Puppy()
-# my_puppy.eat()
-# my_puppy.bark()
+class Animal:
+
+    def eat(self):
+        print("Eating...")
+
+
+class Dog(Animal):
+
+    def bark(self):
+        print("Woof!")
+
+
+class Puppy(Dog):
+
+    def bark(self):
+        print("Yip-yip!")
+
+
+my_puppy = Puppy()
+my_puppy.eat()
+my_puppy.bark()
 
 
 

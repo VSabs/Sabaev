@@ -1,34 +1,34 @@
 # Задача 1 (Цикл for)
 # Напиши программу, которая выводит каждый элемент списка fruits = ["яблоко", "банан", "вишня"] на отдельной строке.
 #
-# fruits = ["яблоко", "банан", "вишня"]
-# for fruit in fruits:
-#     print(fruit)
+fruits = ["яблоко", "банан", "вишня"]
+for fruit in fruits:
+    print(fruit)
 #
 # Задача 2 (Функция range)
 # Напиши программу, которая выводит все чётные числа от 2 до 10 (включительно), используя функцию range() и цикл for.
 
-# number = 2
-# for number in range(2, 11, 2):
-#     print(number)
+number = 2
+for number in range(2, 11, 2):
+    print(number)
 
 # Задача 3 (Цикл while)
 # Напиши программу, которая выводит числа от 1 до 5, используя цикл while.
 #
-# number = 1
-# while number < 6:
-#     print(number)
-#     number += 1
+number = 1
+while number < 6:
+    print(number)
+    number += 1
 #
 # Задача 4 (Остановка циклов break)
 # Напиши программу, которая перебирает числа от 1 до 10, но прерывает цикл, как только встречает число 5.
 
-# number = 0
-# while number < 10:
-#     number +=1
-#     if number == 5:
-#      break
-#     print(number)
+number = 0
+while number < 10:
+    number +=1
+    if number == 5:
+     break
+    print(number)
 
 
 

@@ -1,351 +1,281 @@
 #Задача 2 (Срезы строк)
 #Дана строка:
-from ctypes import HRESULT
-
 #python
-#word = "Автоматизация"
+word = "Автоматизация"
 #Выведи на экран срез строки с 3-го по 7-й символ включительно (нумерация с 0).
-
 #Подсказка (если нужно):
-
 #Помни, что срезы работают как [start:end], где end не включается.
 
-#result = word [3:7]
-#print(result)
+result = word [3:7]
+print(result)
 
 #Задача 3 (F-строки)
 #Даны переменные:
-
 #python
-#city = "Москва"
-#temperature = 20
+city = "Москва"
+temperature = 20
 #Создай строку через f-строку в формате:
 #"В городе Москва сейчас 20 градусов."
 #и выведи её на экран.
 
-#text = f"В городе {city} сейчас {temperature} градусов"
-#print(text)
+text = f"В городе {city} сейчас {temperature} градусов"
+print(text)
 
 #Задача 4 (Базовые методы строк)
 #Дана строка:
-
 #python
-#s = "  hello, World!  "
+s = "  hello, World!  "
 #Примени к ней три метода последовательно:
-
 #Убери пробелы в начале и конце строки,
-
 #Переведи все символы в верхний регистр,
-
 #Замени World на Python.
 
-#result = s.strip().upper().replace("WORLD", "Python")
-#print(result)
+result = s.strip().upper().replace("WORLD", "Python")
+print(result)
 
 #Задача 5 (Конкатенация строк)
 #Даны переменные:
-
 #python
-#part1 = "Авто"
-#part2 = "матизация"
+part1 = "Авто"
+part2 = "матизация"
 #Соедини их через конкатенацию (+) и выведи результат.
 
-#result = part1 + part2
-#print(result)
+result = part1 + part2
+print(result)
 
 #Задача 6 (Получение длины строки)
 #Дана строка:
-
 #python
-#text = "Тестирование"
+text = "Тестирование"
 #Выведи на экран её длину (количество символов) с пояснением:
 #"Длина строки: X", где X — число.
 
-#result = f"Длина строки: {len(text)}"
-#print(result)
+result = f"Длина строки: {len(text)}"
+print(result)
 
 #Задача 7 (Создание строки)
 #Объяви три переменные:
-
 #Пустую строку,
-
 #Строку в двойных кавычках с числом "123",
-
 #Строку в одинарных кавычках с твоим именем.
-
 #Выведи их типы через type() в одну строку (через пробел).
 
-#print(type(" "), type("123"), type('Виталий'))
+print(type(" "), type("123"), type('Виталий'))
 
 #Задача 8 (Методы строк)
 #Дана строка:
-
 #python
-#s = "pYtHoN"
+s = "pYtHoN"
 #Сделай следующее:
-
 #Переведи её в нижний регистр,
-
 #Замени "python" на "Python" (с заглавной P),
-
 #Выведи результат.
 
-#result = s.lower().replace("python", "Python")
-#print(result)
+result = s.lower().replace("python", "Python")
+print(result)
 
 #Задача 9 (Срезы + конкатенация)
 #Дана строка:
-
 #python
-#text = "автоматизация"
+text = "автоматизация"
 #Выведи первые 5 символов и последние 3 символа, соединённые через дефис (например: "автом-ция").
 
-#result = text [0:5]  + "-" + text[-3:]
-#print(result)
+result = text [0:5]  + "-" + text[-3:]
+print(result)
 
 #Задача 10 (F-строки)
 #Даны:
-
 #python
-#name = "Анна"
-#age = 25
+name = "Анна"
+age = 25
 #Создай строку через f-строку: "Меня зовут Анна, мне 25 лет." и выведи её.
 
-#result = f"Меня зовут {name}, мне {age} лет"
-#print(result)
+result = f"Меня зовут {name}, мне {age} лет"
+print(result)
 
 #Задача 11 (Базовые методы строк)
-
 #Дана строка:
-
 #python
-#s = "  Hello, World!  "
+s = "  Hello, World!  "
 #Примени к ней методы, чтобы:
-
 #Убрать пробелы в начале и конце строки
-
 #Перевести все символы в нижний регистр
-
 #Заменить "world" на "Python"
-
 #Выведи итоговую строку.
 
-#result = s.strip().lower().replace("world", "Python")
-#print(result)
+result = s.strip().lower().replace("world", "Python")
+print(result)
 
 #Задача 13 (Срезы строк)
-
 #Дана строка:
-
 #python
-#text = "Программирование"
+text = "Программирование"
 #Выведи на экран срез: первые 6 символов и последние 4 символа, соединенные через дефис.
-
 #Пример вывода:
-
 #text
 #Програм-ние
 
-#result = text[0:6] + "-" + text [-4:]
-#print(result)
+result = text[0:6] + "-" + text [-4:]
+print(result)
 
 #Задача 14 (Доступ к символам)
 #Дана строка:
-
 #python
-#word = "Тестировщик"
+word = "Тестировщик"
 #Выведи на экран:
-
 #Первый символ,
-
 #Средний символ (подсказка: используй len()),
-
 #Последний символ.
-#result = word[0]
-#print(result)
+result = word[0]
+print(result)
 
-#result1 = len(word) // 2
-#result1 = word[result1]
-#print(result1)
+result1 = len(word) // 2
+result1 = word[result1]
+print(result1)
 
-#result2 = word[-1]
-#print(result2)
+result2 = word[-1]
+print(result2)
 
 #Задача 15 (Конкатенация строк)
 #Даны переменные:
-
 #python
-#start = "Начало"
-#end = "конец"
-
+start = "Начало"
+end = "конец"
 #Создай новую строку через конкатенацию с пробелом между словами:
 #"Начало конец"
 
-#result = start + " " + end
-#print(result)
+result = start + " " + end
+print(result)
 
 #Задача 16 (Получение длины строки)
 #Дана строка:
-
 #python
-#password = "Qwerty123!"
+password = "Qwerty123!"
 #Выведи на экран её длину в формате:
 #"Длина пароля: X символов", где X — число.
 
-#result = f"Длина пароля: {len(password)} Символов"
-#print(result)
+result = f"Длина пароля: {len(password)} Символов"
+print(result)
 
 #Задача 17 (Создание строки)
 #Создай три строки:
-
 #Пустую (""),
-
 #Со значением "100" (как строка, не число),
-
 #С любым именем в одинарных кавычках.
-
 #Выведи их типы через type() в одну строку.
 
-#print(type(" "), type("100"), type("Виталя"))
+print(type(" "), type("100"), type("Виталя"))
 
 #Задача 18 (F-строки)
-
 #Даны переменные:
-
 #python
-#product = "яблоки"
-#price = 85
+product = "яблоки"
+price = 85
 #Создай строку через f-строку в формате:
 #"Цена на яблоки: 85 руб."
 
-#text = f"Цена на {product}: {price} руб."
-#print(text)
+text = f"Цена на {product}: {price} руб."
+print(text)
 
 #Задача 19 (Базовые методы строк)
 #Дана строка:
 
 #python
-#s = "!!ПРИМЕР!!"
+s = "!!ПРИМЕР!!"
 #Сделай следующее:
-
 #Удали !! в начале и конце,
-
 #Переведи строку в нижний регистр,
-
 #Замени "пример" на "образец".
 
-#result = s.strip("!").lower().replace("пример", "образец")
-#print(result)
+result = s.strip("!").lower().replace("пример", "образец")
+print(result)
 
 #Задача 20 (Срезы + конкатенация)
-
 #Дана строка:
-
 #python
-#text = "ОбучениеPython"
+text = "ОбучениеPython"
 #Раздели её на две части:
-
 #Первые 8 символов,
-
 #Остальные символы.
 #Соедини их через пробел и выведи результат.
 
-#result = text[:8] + " " + text[8:]
-#print(result)
+result = text[:8] + " " + text[8:]
+print(result)
 
 #Задача 21 (Методы строк)
 #Дана строка:
 
 #python
-#s = "  ИНФОРМАЦИЯ  "
+s = "  ИНФОРМАЦИЯ  "
 #Примени методы, чтобы:
-
 #Убрать пробелы по краям,
-
 #Перевести строку в нижний регистр,
-
 #Заменить "информация" на "данные".
 
-#result = s.strip().lower().replace("информация", "данные")
-#print(result)
+result = s.strip().lower().replace("информация", "данные")
+print(result)
 
 #Задача 22 (Доступ к символам)
 #Дана строка:
-
-#python
-#word = "Программист"
+# python
+word = "Программист"
 #Выведи:
-
 #Первый символ,
-
 #Третий символ (индекс 2),
-
 #Последний символ.
 
-#result = word[0]
-#result1 = word[2]
-#result2 = word[-1]
-#print(result)
-#print(result1)
-#print(result2)
+result = word[0]
+result1 = word[2]
+result2 = word[-1]
+print(result)
+print(result1)
+print(result2)
 
 #Задача 23 (Конкатенация строк)
 #Даны переменные:
 
 #python
-#part1 = "авто"
-#part2 = "матизация"
+part1 = "авто"
+part2 = "матизация"
 #Соедини их без пробела и выведи результат.
 
-#result = part1 + part2
-#print(result)
-
-#Задача 24 (Создание строки)
-#Создай три строки:
-
-#Пустую (""),
-
-#С числом "42" (как строку, не число),
-
-#С любым словом в двойных кавычках.
-
-#Выведи их типы через type() в одну строку через пробел.
-
+result = part1 + part2
+print(result)
 
 # Задача 1 (Создание строки)
 # Напиши код, который создает строку "Hello, Python!" и выводит ее на экран.
 #
-# word = "Hello, Python!"
-# print(word)
+word = "Hello, Python!"
+print(word)
 
 
 # Задача 2 (Доступ к символам)
 # Дана строка "Automation". Выведи третий символ этой строки.
 
-# str_automation = "Automation"
-# print(str_automation[2])
+str_automation = "Automation"
+print(str_automation[2])
 
 
 # Задача 3 (Срезы)
 # Дана строка "Programming". Выведи срез с 3-го по 7-й символ включительно.
 
-# str_Programming = "Programming"
-# print(str_Programming[2:7])
+str_Programming = "Programming"
+print(str_Programming[2:7])
 
 
 # Задача 4 (Получение длины строки)
 # Дана строка "Testing". Напиши код, который выводит её длину.
 
-# test = "Testing"
-# print(len(test))
+test = "Testing"
+print(len(test))
 
 
 # Задача 5 (Конкатенация строк)
 # Объедини строки "Hello, " и "world!" в одну и выведи результат.
 
-# text = "Hello, "
-# text2 = "world!"
-# print(text + text2)
+text = "Hello, "
+text2 = "world!"
+print(text + text2)
 
 
 # Задача 6 (F-строки)
@@ -357,14 +287,14 @@ from ctypes import HRESULT
 # Создай строку с помощью f-строки, чтобы получилось:
 # "Alice is 25 years old".
 
-# name = "Alice"
-# age = 25
-# result = f"{name} is {age} years old"
-# print(result)
+name = "Alice"
+age = 25
+result = f"{name} is {age} years old"
+print(result)
 
 # Задача 7 (Базовые методы строк)
 # Дана строка: " python ".
 # Удали лишние пробелы в начале и конце строки, затем выведи результат.
 
-# text = " python "
-# print(text.strip())
+text = " python "
+print(text.strip())

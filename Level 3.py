@@ -1,7 +1,7 @@
 # Задача 1 (Создание списка)
 # Создай список fruits с тремя элементами: "apple", "banana" и "orange". Затем выведи его на экран.
 
-# fruits = ["apple", "banana", "orange"]
+fruits = ["apple", "banana", "orange"]
 
 
 # Задача 2 (Добавление элементов в список)
@@ -9,9 +9,9 @@
 # numbers = [10, 20, 30]
 # Добавь число 40 в конец списка, затем выведи обновлённый список.
 
-# numbers = [10, 20, 30]
-# numbers.append(40)
-# print(numbers)
+numbers = [10, 20, 30]
+numbers.append(40)
+print(numbers)
 
 
 # Задача 3 (Получение элементов списка)
@@ -19,8 +19,8 @@
 # colors = ["red", "green", "blue", "yellow"]
 # Выведи второй элемент этого списка (индексация начинается с 0).
 
-# colors = ["red", "green", "blue", "yellow"]
-# print(colors[1])
+colors = ["red", "green", "blue", "yellow"]
+print(colors[1])
 
 
 # Задача 4 (Срезы списка)
@@ -28,8 +28,8 @@
 # letters = ["a", "b", "c", "d", "e", "f"]
 # Выведи срез с третьего по пятый элемент включительно.
 
-# letters = ["a", "b", "c", "d", "e", "f"]
-# print(letters[2:5])
+letters = ["a", "b", "c", "d", "e", "f"]
+print(letters[2:5])
 
 
 # Задача 5 (Замена элементов в списке)
@@ -37,9 +37,9 @@
 # items = ["book", "pen", "pencil", "eraser"]
 # Замени элемент "pencil" на "ruler", затем выведи обновлённый список.
 
-# items = ["book", "pen", "pencil", "eraser"]
-# items[2] = "ruler"
-# print(items)
+items = ["book", "pen", "pencil", "eraser"]
+items[2] = "ruler"
+print(items)
 
 
 # Задача 6 (Удаление элементов из списка)
@@ -47,9 +47,9 @@
 # animals = ["cat", "dog", "elephant", "giraffe"]
 # Удали элемент "elephant" по значению (не по индексу), затем выведи список.
 
-# animals = ["cat", "dog", "elephant", "giraffe"]
-# animals.remove("elephant")
-# print(animals)
+animals = ["cat", "dog", "elephant", "giraffe"]
+animals.remove("elephant")
+print(animals)
 
 
 # Задача 7 (Слияние списков)
@@ -58,10 +58,10 @@
 # list2 = [4, 5, 6]
 # Объедини их в один список (без изменения исходных) и выведи результат.
 
-# list1 = [1, 2, 3]
-# list2 = [4, 5, 6]
-# result = list1 + list2
-# print(result)
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+result = list1 + list2
+print(result)
 
 
 # Задача 8 (Добавление элемента в конкретное место списка)
@@ -69,18 +69,19 @@
 # numbers = [10, 20, 40, 50]
 # Вставь число 30 между 20 и 40, затем выведи список.
 
-# numbers = [10, 20, 40, 50]
-# numbers.insert(2, 30)
-# print(numbers)
+numbers = [10, 20, 40, 50]
+numbers.insert(2, 30)
+print(numbers)
 
 
 # Задача 9 (Очистка списка)
 # Дан список:
 # data = ["temp", "log", "backup", "cache"]
 # Полностью очисти его, затем выведи пустой список.
-# data = ["temp", "log", "backup", "cache"]
-# data.clear()
-# print(data)
+
+data = ["temp", "log", "backup", "cache"]
+data.clear()
+print(data)
 
 
 

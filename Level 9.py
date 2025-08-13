@@ -7,16 +7,16 @@
 # book = Book("1984", "Джордж Оруэлл")
 # print(book.info())  # Должно вывести: "Название: 1984, Автор: Джордж Оруэлл"
 
-# class Book:
-#     def __init__(self, title, author):
-#         self.title = title
-#         self.author = author
-#
-#     def info(self):
-#         return f"Название: {self.title}, Автор: {self.author}"
-#
-# book = Book("Властелин колец", "Роман Толкин")
-# print(book.info())
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+
+    def info(self):
+        return f"Название: {self.title}, Автор: {self.author}"
+
+book = Book("Властелин колец", "Роман Толкин")
+print(book.info())
 
 # Задача 2 (Методы класса + self)
 # Создай класс Calculator, который имеет:
@@ -24,22 +24,22 @@
 # Метод add(self, num), который увеличивает result на num.
 # Метод subtract(self, num), который уменьшает result на num.
 
-# class Calculator:
-#     def __init__(self, result=0 ):
-#         self.result = result
-#
-#     def add(self, num):
-#         self.result += num
-#
-#
-#     def subtract(self, num):
-#         self.result -= num
-#
-#
-# calc = Calculator()
-# calc.add(5)
-# calc.subtract(3)
-# print(calc.result)
+class Calculator:
+    def __init__(self, result=0 ):
+        self.result = result
+
+    def add(self, num):
+        self.result += num
+
+
+    def subtract(self, num):
+        self.result -= num
+
+
+calc = Calculator()
+calc.add(5)
+calc.subtract(3)
+print(calc.result)
 
 # Задача 3 (Конструктор класса и атрибуты)
 # Создай класс Student с:
@@ -55,17 +55,17 @@
 # print(student.get_info())
 # # Вывод: "Студент: Анна, Возраст: 15, Класс: 9"
 
-# class Student:
-#     def __init__(self, name, age, grade):
-#         self.name = name
-#         self.age = age
-#         self.grade = grade
-#
-#     def get_info(self):
-#         return f"Студент: {self.name}, Возраст: {self.age}, Класс: {self.grade}"
-#
-# student = Student("Анна", 15, 9)
-# print(student.get_info())
+class Student:
+    def __init__(self, name, age, grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+
+    def get_info(self):
+        return f"Студент: {self.name}, Возраст: {self.age}, Класс: {self.grade}"
+
+student = Student("Анна", 15, 9)
+print(student.get_info())
 
 # Задача 4 (Классовые атрибуты)
 # Создай класс School с:
@@ -79,18 +79,18 @@
 # print(school.info())
 # # Вывод: "Школа: Моя школа, Учеников: 200"
 
-# class School:
-#     SCHOOL_NAME = "Моя школа"
-#
-#     def __init__(self, student_count):
-#         self.student_count = student_count
-#
-#
-#     def info(self):
-#         return f"Школа: {self.SCHOOL_NAME}, Учеников: {self.student_count}"
-#
-# school = School(200)
-# print(school.info())
+class School:
+    SCHOOL_NAME = "Моя школа"
+
+    def __init__(self, student_count):
+        self.student_count = student_count
+
+
+    def info(self):
+        return f"Школа: {self.SCHOOL_NAME}, Учеников: {self.student_count}"
+
+school = School(200)
+print(school.info())
 
 # Задача 5 (Понимание self)
 # Создай класс Counter с:
@@ -104,21 +104,21 @@
 # c.increment()
 # print(c.show())  # Должно вывести: 2
 
-# class Counter:
-#
-#     def __init__(self, count=0):
-#         self.count = count
-#
-#     def increment(self):
-#         self.count += 1
-#
-#     def show(self):
-#         return self.count
-#
-# c = Counter()
-# c.increment()
-# c.increment()
-# print(c.show())
+class Counter:
+
+    def __init__(self, count=0):
+        self.count = count
+
+    def increment(self):
+        self.count += 1
+
+    def show(self):
+        return self.count
+
+c = Counter()
+c.increment()
+c.increment()
+print(c.show())
 
 # Задача 6 (Комбинированная: атрибуты + методы)
 # Создай класс BankAccount с:
@@ -131,25 +131,25 @@
 # get_balance() - возвращает строку:
 # "Владелец: {owner}, Баланс: {balance}"
 
-# class BankAccount:
-#
-#     def __init__(self, owner, balance=0):
-#         self.owner = owner
-#         self.balance = balance
-#
-#     def deposit(self, amount):
-#         self.balance += amount
-#
-#     def withdraw(self, amount):
-#         self.balance -= amount
-#
-#     def get_balance(self):
-#         return f"Владелец: {self.owner}, Баланс: {self.balance}"
-#
-# acc = BankAccount("Иван Петров")
-# acc.deposit(100)
-# acc.withdraw(30)
-# print(acc.get_balance())
+class BankAccount:
+
+    def __init__(self, owner, balance=0):
+        self.owner = owner
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        self.balance -= amount
+
+    def get_balance(self):
+        return f"Владелец: {self.owner}, Баланс: {self.balance}"
+
+acc = BankAccount("Иван Петров")
+acc.deposit(100)
+acc.withdraw(30)
+print(acc.get_balance())
 
 # Задача 1 (Создание класса)
 # Создай класс Box, который имеет:
@@ -160,17 +160,17 @@
 # box = Box(10, 20)
 # print(box.area())  # Должно вывести 200
 
-# class Box:
-#     def __init__(self, width, height):
-#         self.width = width
-#         self.height = height
-#
-#     def area(self):
-#         return self.width * self.height
-#
-#
-# box = Box(10, 20)
-# print(box.area())
+class Box:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+
+box = Box(10, 20)
+print(box.area())
 
 # Задача 2 (Методы класса)
 # Создай класс Counter с:
@@ -187,23 +187,23 @@
 # c.reset()
 # print(c.count)  # 0
 
-# class Counter:
-#     def __init__(self, count=0):
-#         self.count = count
-#
-#     def increment(self):
-#         self.count += 1
-#
-#     def reset(self):
-#         self.count = 0
-#
-# c = Counter()
-# c.increment()
-# print(c.count)
-# c.increment()
-# print(c.count)
-# c.reset()
-# print(c.count)
+class Counter:
+    def __init__(self, count=0):
+        self.count = count
+
+    def increment(self):
+        self.count += 1
+
+    def reset(self):
+        self.count = 0
+
+c = Counter()
+c.increment()
+print(c.count)
+c.increment()
+print(c.count)
+c.reset()
+print(c.count)
 
 # Задача 3 (Общие атрибуты)
 # Создай класс Player с:
@@ -218,19 +218,19 @@
 # print(p1.info())  # "Анна играет в Chess"
 # print(p2.info())  # "Петр играет в Chess"
 
-# class Player:
-#     GAME_NAME = "Chess"
-#
-#     def __init__(self, name):
-#         self.name = name
-#
-#     def info(self):
-#         return f"{self.name} играет в {self.GAME_NAME}"
-#
-# player1 = Player("Анна")
-# player2 = Player("Петр")
-# print(player1.info())
-# print(player2.info())
+class Player:
+    GAME_NAME = "Chess"
+
+    def __init__(self, name):
+        self.name = name
+
+    def info(self):
+        return f"{self.name} играет в {self.GAME_NAME}"
+
+player1 = Player("Анна")
+player2 = Player("Петр")
+print(player1.info())
+print(player2.info())
 
 # Задача 4 (Понимание self)
 # Создай класс LightBulb с:
@@ -244,17 +244,17 @@
 # print(bulb.switch())  # "Лампа включена"
 # print(bulb.switch())  # "Лампа выключена"
 
-# class LightBuld:
-#     def __init__(self):
-#         self.is_on = False
-#
-#     def switch(self):
-#         self.is_on = not self.is_on
-#         return "Лампа включена" if self.is_on else "Лампа выключена"
-#
-# buld = LightBuld()
-# print(buld.switch())
-# print(buld.switch())
+class LightBuld:
+    def __init__(self):
+        self.is_on = False
+
+    def switch(self):
+        self.is_on = not self.is_on
+        return "Лампа включена" if self.is_on else "Лампа выключена"
+
+buld = LightBuld()
+print(buld.switch())
+print(buld.switch())
 
 # Задача 1 (Методы класса)
 # Создай класс Calculator. Добавь в него метод add, который принимает два числа и возвращает их сумму.
@@ -264,14 +264,14 @@
 # result = calc.add(3, 5)
 # print(result)  # Должно вывести 8
 
-# class Calculator:
-#
-#     def add(self, a, b):
-#         return a + b
-#
-# calc = Calculator()
-# result = calc.add(3, 5)
-# print(result)
+class Calculator:
+
+    def add(self, a, b):
+        return a + b
+
+calc = Calculator()
+result = calc.add(3, 5)
+print(result)
 #
 # Задача 2 (Конструктор класса __init__)
 # Создай класс Book. В конструкторе (__init__) инициализируй атрибуты:
@@ -286,16 +286,16 @@
 # print(book.author)  # Должно вывести "George Orwell"
 # print(book.pages)   # Должно вывести 328
 
-# class Book:
-#     def __init__(self, title, author, pages):
-#         self.title = title
-#         self.author = author
-#         self.pages = pages
-#
-# book = Book("1984", "George Orwell", 328 )
-# print(book.title)
-# print(book.author)
-# print(book.pages)
+class Book:
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+
+book = Book("1984", "George Orwell", 328 )
+print(book.title)
+print(book.author)
+print(book.pages)
 
 # Задача 3 (Общие атрибуты класса)
 # Создай класс SpaceShip с общим для всех объектов атрибутом fuel_type = "термоядерное". Добавь в конструктор индивидуальные атрибуты:
@@ -310,20 +310,20 @@
 # print(ship2.fuel_type)  # Должно вывести "термоядерное"
 # print(ship1.name)      # Должно вывести "Аполлон"
 
-# class SpaceShip:
-#
-#     FUEL_TYPE = "термоядерное"
-#
-#     def __init__(self, name, crew):
-#         self.name = name
-#         self.crew = crew
-#
-# ship = SpaceShip("Союз", 5)
-# ship2 = SpaceShip("Ракета", 3)
-#
-# print(ship.FUEL_TYPE)
-# print(ship2.FUEL_TYPE)
-# print(ship.name)
+class SpaceShip:
+
+    FUEL_TYPE = "термоядерное"
+
+    def __init__(self, name, crew):
+        self.name = name
+        self.crew = crew
+
+ship = SpaceShip("Союз", 5)
+ship2 = SpaceShip("Ракета", 3)
+
+print(ship.FUEL_TYPE)
+print(ship2.FUEL_TYPE)
+print(ship.name)
 
 # Задача 4 (Параметр self)
 # Создай класс Robot с методом introduce(), который выводит сообщение с именем робота. Имя должно передаваться при создании объекта.
@@ -334,20 +334,20 @@
 # c3po = Robot("C-3PO")
 # c3po.introduce()  # Должно вывести: "Я робот. Меня зовут C-3PO"
 
-# class Robot:
-#
-#     def __init__(self, name):
-#         self.name = name
-#
-#
-#     def introduce(self):
-#         print( f"Я робот. Меня зовут {self.name}")
-#
-# r2d2 = Robot("R2-D2")
-# r2d2.introduce()
-#
-# c3po = Robot("C-3PO")
-# c3po.introduce()
+class Robot:
+
+    def __init__(self, name):
+        self.name = name
+
+
+    def introduce(self):
+        print( f"Я робот. Меня зовут {self.name}")
+
+r2d2 = Robot("R2-D2")
+r2d2.introduce()
+
+c3po = Robot("C-3PO")
+c3po.introduce()
 
 # Задача 5 (Работа с методами класса)
 # Создай класс BankAccount с методами:
@@ -362,27 +362,27 @@
 # account.withdraw(300)
 # account.check_balance()  # Должно вывести: 700
 
-# class BankAccount:
-#
-#     def __init__(self, balance=0):
-#         self.balance = balance
-#
-#     def deposit(self, amount):
-#         self.balance += amount
-#
-#     def withdraw(self, amount):
-#         if self.balance >= amount:
-#                 self.balance -= amount
-#         else:
-#             print("Недостаточно средств")
-#
-#     def check_balance(self):
-#         print(f"Текущий баланс: {self.balance}")
-#
-# account = BankAccount()
-# account.deposit(1000)
-# account.withdraw(300)
-# account.check_balance()
+class BankAccount:
+
+    def __init__(self, balance=0):
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if self.balance >= amount:
+                self.balance -= amount
+        else:
+            print("Недостаточно средств")
+
+    def check_balance(self):
+        print(f"Текущий баланс: {self.balance}")
+
+account = BankAccount()
+account.deposit(1000)
+account.withdraw(300)
+account.check_balance()
 
 # Задача 1 (Конструктор класса __init__ и атрибуты)
 # Создай класс Book:
@@ -393,19 +393,19 @@
 # Создай объект Book("Python Basics", "A. Smith", 200)
 # Вызови describe() и выведи результат
 
-# class Book:
-#
-#     def __init__(self, title, author, pages):
-#         self.title = title
-#         self.author = author
-#         self.pages = pages
-#
-#     def describe(self):
-#         return f"{self.title} by {self.author}, {self.pages}"
-#
-#
-# my_book = Book("Моя книга", "Сабаев", 41)
-# print(my_book.describe())
+class Book:
+
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+
+    def describe(self):
+        return f"{self.title} by {self.author}, {self.pages}"
+
+
+my_book = Book("Моя книга", "Сабаев", 41)
+print(my_book.describe())
 
 
 
