@@ -78,9 +78,24 @@ my_puppy = Puppy()
 my_puppy.eat()
 my_puppy.bark()
 
+# Задача 1 (Базовое наследование)
+# Создай класс Animal с методом make_sound(), который печатает "Some generic sound". Затем создай класс Dog, который наследуется от Animal и переопределяет метод make_sound(), чтобы он печатал "Woof!".
+#
+# Проверь работу, создав экземпляр Dog и вызвав его метод.
+
+class Animal:
+
+    def make_sound(self):
+        print("Some generic sound")
 
 
+class Dog(Animal):
 
+    def make_sound(self):
+        print("Woof!")
+
+my_dog = Dog()
+my_dog.make_sound()
 
 
 
