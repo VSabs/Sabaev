@@ -17,6 +17,8 @@ print(greet("Анна"))
 
 def make_coffee(coffee_type, sugar = 0):
     return f"Ваш {coffee_type} с {sugar} кусочками сахара"
+
+
 print(make_coffee("латте"))
 print(make_coffee("капучино", 2))
 
@@ -27,6 +29,8 @@ print(make_coffee("капучино", 2))
 
 def get_first_element(items):
     return items[0]
+
+
 print(get_first_element([10, 20, 30]))
 print(get_first_element(["а", "б", "в"]))
 
@@ -35,6 +39,7 @@ print(get_first_element(["а", "б", "в"]))
 
 def greet_user():
     print("Привет, пользователь!")
+
 
 greet_user()
 greet_user()
@@ -149,6 +154,7 @@ def uppercase_decorator(func):
 def say_hello():
     return "hello"
 
+
 print(say_hello())
 
 # Задача 7 (Декораторы)
@@ -168,6 +174,7 @@ def add_exclamation(func):
 @add_exclamation
 def greet():
     return "Привет"
+
 
 print(greet())  # Должно вывести: "Привет!"
 
@@ -192,6 +199,7 @@ def repeat_twice(func):
 def say_word():
     return "Python"
 
+
 print(say_word())  # Должно вывести: "Python Python"
 
 # Задача 11 (Простой декоратор)
@@ -213,6 +221,7 @@ def make_uppercase(func):
 def get_text():
     return "hello world"
 
+
 print(get_text())
 
 # Задача 12 (Декоратор с замыканием)
@@ -233,6 +242,7 @@ def add_prefix(func):
 @add_prefix
 def get_message():
     return "Проверьте почту"
+
 
 print(get_message())
 
@@ -257,6 +267,7 @@ def excited(count):
 def say_hello():
     return "Привет"
 
+
 print(say_hello())
 
 # Задача 1 (Функции в Python)
@@ -264,6 +275,7 @@ print(say_hello())
 
 def greet_user():
     print("Привет, пользователь!")
+
 
 greet_user()
 
@@ -282,6 +294,7 @@ print(multiply(3, 5))
 
 def welcome(name, greeting="Добро пожаловать"):
     return f"{greeting}, {name}!"
+
 
 print(welcome("Анна"))
 print(welcome(name="Максим", greeting="Привет"))
@@ -310,6 +323,7 @@ def uppercase_decorator(func):
 def say_hello():
     return "привет"
 
+
 print(say_hello())
 
 # Задача 1 (Дефолтные значения аргументов)
@@ -320,6 +334,7 @@ print(say_hello())
 
 def greet(name, greeting="Добрый день"):
     return f"{greeting}, {name}"
+
 
 print(greet("Анна"))
 print(greet(name="Иван", greeting="Привет"))
@@ -336,6 +351,7 @@ print(greet(name="Иван", greeting="Привет"))
 def calculate(a, b):
     return a + b, a * b
 
+
 result = calculate(3, 4)
 print(result)
 
@@ -347,6 +363,7 @@ print(result)
 def greet_user(name):
     print(f"Привет, {name}! Добро пожаловать!")
 
+
 greet_user("Анна")
 #
 # Задача 2 (Аргументы функций)
@@ -354,6 +371,7 @@ greet_user("Анна")
 
 def multiply_numbers(a, b):
     return a * b
+
 
 print(multiply_numbers(3, 7))
 
@@ -371,6 +389,7 @@ print(multiply_numbers(3, 7))
 def make_coffee(type, sugar=1):
     return f"Кофе: {type}, сахар: {sugar} ложек"
 
+
 print(make_coffee("латте"))
 print(make_coffee("эспрессо", 3))
 
@@ -379,6 +398,7 @@ print(make_coffee("эспрессо", 3))
 
 def is_even(a):
     return a % 2 == 0
+
 
 print(is_even(10))
 print(is_even(15))
@@ -405,6 +425,7 @@ def repeat_twice(func):
 @repeat_twice
 def say_hello():
     print("Привет!")
+
 
 say_hello()
 
