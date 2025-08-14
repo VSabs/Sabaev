@@ -119,6 +119,135 @@ my_cars = Car(max_speed=200, brand="Toyota")
 print(my_cars.max_speed)
 print(my_cars.brand)
 
+# Первая задача (№1):
+# Создай класс Book с методом describe(), который печатает "This is a book". Затем создай класс Novel, который наследуется от Book и переопределяет describe(), чтобы он печатал "This is a novel".
+# Проверь работу, создав экземпляр Novel и вызвав его метод.
+
+class Book:
+
+    def describe(self):
+        print("This is a book")
+
+
+class Novel(Book):
+    def describe(self):
+        print("This is a novel")
+
+
+my_book = Novel()
+my_book.describe()
+
+# Задача 2 (Использование super())
+# Создай класс Device с методом __init__(), который принимает параметр power (мощность) и сохраняет его в атрибут.
+# Затем создай класс SmartDevice, который:
+# Наследуется от Device
+# В своем __init__() принимает два параметра: power и os (операционная система)
+# Использует super() для вызова __init__() родительского класса с параметром power
+# Сохраняет os в отдельный атрибут
+# Проверь работу, создав экземпляр SmartDevice с параметрами power=100 и os="Android", затем выведи оба его атрибута.
+
+class Device:
+
+    def __init__(self, power):
+        self.power = power
+
+
+class SmartDevice(Device):
+
+    def __init__(self, power, os):
+        super().__init__(power)
+        self.os = os
+
+
+my_device = SmartDevice(power=100, os="Android")
+print(my_device.power)
+print(my_device.os)
+
+# Следующая задача (№3): Добавление новых методов
+# Создай класс Employee с методом work(), который печатает "I'm working". Затем создай класс Manager, который:
+# Наследуется от Employee
+# Добавляет новый метод manage() с выводом "I'm managing"
+# Переопределяет work() для вывода "I'm working hard!"
+# Проверь работу, создав экземпляр Manager и вызвав оба метода.
+
+class Employee:
+
+    def work(self):
+        print("I'm working")
+
+
+class Manager(Employee):
+
+    def manage(self):
+        print("I'm managing")
+
+    def work(self):
+        print("I'm working hard!")
+
+
+my_manager = Manager()
+my_manager.manage()
+my_manager.work()
+
+# Следующая задача (№4): Множественное наследование
+# Создай:
+# Класс Camera с методом take_photo() (выводит "Photo taken")
+# Класс Phone с методом make_call() (выводит "Calling...")
+# Класс Smartphone, который наследуется от обоих классов и добавляет метод play_game() (выводит "Playing game")
+# Проверь работу, создав экземпляр Smartphone и вызвав все три метода.
+
+class Camera:
+
+    def take_photo(self):
+        print("Photo taken")
+
+
+class Phone:
+
+    def make_call(self):
+        print("Calling...")
+
+
+class Smartphone(Camera, Phone):
+
+    def play_game(self):
+        print("Playing game")
+
+
+my_smartphone = Smartphone()
+my_smartphone.play_game()
+my_smartphone.make_call()
+my_smartphone.take_photo()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
