@@ -407,6 +407,88 @@ class Book:
 my_book = Book("Моя книга", "Сабаев", 41)
 print(my_book.describe())
 
+# Первая задача (№1 — Конструктор класса):
+# Создай класс Robot с конструктором __init__(), который принимает параметр name и сохраняет его в атрибут экземпляра. Добавь метод greet(), выводящий "Hello, I'm {name}".
+# Проверь работу: создай экземпляр Robot с именем "R2-D2" и вызови greet().
+# Что нужно сделать:
+# Напиши класс с __init__ и методом
+# Создай объект и вызови метод
+
+class Robot:
+
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print(f"Hello, I'm {self.name}")
+
+
+my_robot = Robot("R2-D2")
+my_robot.greet()
+
+# Следующая задача (№2 - Атрибуты класса и экземпляра):
+# Создай класс Spaceship:
+# С общим атрибутом класса fuel_type = "антиматерия"
+# С конструктором, принимающим model (сохраняет в атрибут экземпляра)
+# С методом info(), выводящим: "Модель: {model}, Топливо: {fuel_type}"
+# Проверь: создай экземпляр Spaceship("USS Enterprise") и вызови info().
+
+class Spaceship:
+
+    FUEL_TYPE = "антиматерия"
+
+    def __init__(self, model):
+        self.model = model
+
+    def info(self):
+        print(f"Модель: {self.model}, Топливо: {self.FUEL_TYPE}")
+
+
+my_spaceship = Spaceship("USS Enterprise")
+my_spaceship.info()
+
+# Следующая задача (№3 - Работа с объектами):
+# Создай класс BankAccount:
+# С конструктором, принимающим account_holder (владелец) и balance (баланс, по умолчанию 0)
+# С методами:
+# deposit(amount) - увеличивает баланс
+# withdraw(amount) - уменьшает баланс (нельзя уйти в минус!)
+# check_balance() - возвращает строку: "{account_holder}, баланс: {balance}₽"
+# Проверь: создай аккаунт, внеси 1000₽, сними 500₽ и проверь баланс.
+
+class BankAccount:
+
+    def __init__(self, account_holder, balance=0):
+        self.account_holder = account_holder
+        self.balance = balance
+
+    def deposit(self,amount):
+        if amount > 0:
+            self.balance += amount
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+        else:
+            print("Недостаточно средств")
+
+    def check_balance(self):
+        return f"{self.account_holder}, баланс: {self.balance}₽"
+
+
+my_account = BankAccount("Вертолек", 500)
+my_account.deposit(1000)
+my_account.withdraw(300)
+print(my_account.check_balance())
+
+
+
+
+
+
+
+
+
 
 
 
