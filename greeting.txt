@@ -1,2 +1,3 @@
-Hello, Python!
-I'm learning file operations!
+Первая строка
+Вторая строка
+Третья строка

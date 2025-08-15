@@ -81,6 +81,73 @@ dict2 = {"c": 3, "d": 4}
 dict3 = dict1 | dict2
 print(dict3)
 
+# Первая задача (№1 — создание словаря):
+# Создай словарь student с ключами:
+# "name" (значение — твоё имя)
+# "age" (твой возраст)
+# "courses" (список из 2-3 предметов, например ["математика", "физика"])
+# Выведи словарь через print().
+
+student = {
+    "name": "Виталий",
+    "age": 29,
+    "courses": ["математика", "физика"]
+}
+print(student)
+
+# Следующая задача (№2 — доступ по ключу):
+# Дан словарь:
+# python
+car = {"brand": "Toyota", "model": "Camry", "year": 2020}
+print(car["brand"], car["year"])
+
+# Следующая задача (№3 — добавление/обновление элементов):
+# Дан словарь:
+# python
+# phone = {"brand": "Samsung", "model": "Galaxy"}
+# Добавь в него:
+# Новый ключ "year" со значением 2022
+# Обнови "model" на "Galaxy S23"
+
+phone = {
+    "brand": "Samsung",
+    "model": "Galaxy"
+}
+phone["year"] = 2022
+phone["model"] = "Galaxy S23"
+print(phone)
+
+# Следующая задача (№4 — удаление элементов):
+# Дан словарь:
+# python
+
+laptop = {"brand": "Lenovo", "model": "ThinkPad", "year": 2021, "price": 1500}
+laptop.pop("price")
+print(laptop)
+
+# Следующая задача (№5 — методы словарей):
+# Дан словарь:
+#
+# python
+
+book = {"title": "1984", "author": "Оруэлл", "year": 1949}
+print(list (book.keys()))
+print(list (book.values()))
+
+# Следующая задача (№6 — проверка элементов):
+# Дан словарь:
+# python
+
+user = {"name": "Анна", "age": 25, "email": "anna@example.com"}
+print("email" in user)
+print( 25 in user.values())
+
+
+
+
+
+
+
 
 
 

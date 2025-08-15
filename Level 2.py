@@ -298,3 +298,53 @@ print(result)
 
 text = " python "
 print(text.strip())
+
+# Пример задачи:
+# «Задача 1 (Срезы): Дана строка text = "Python". Выведи первые 3 символа.»
+
+text = "Python"
+text1 = text[0 : 3]
+print(text1)
+
+# Задача 2 (Методы строк)
+# Дана строка:
+# python
+
+text = "  Hello, World!  "
+print(text.strip().upper())
+
+# Задача 3 (F-строки)
+# Даны переменные:
+# python
+
+name = "Анна"
+age = 25
+
+print(f"Меня зовут {name}, мне {age} лет")
+
+# Задача 4 (Методы строк - split() и join())
+# Дана строка:
+# python
+
+text = "Я изучаю Python на курсе по автоматизации"
+word = text.split()
+text1 =  " | ".join(word)
+print(text1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

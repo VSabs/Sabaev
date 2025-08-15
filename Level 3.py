@@ -1,5 +1,7 @@
 # Задача 1 (Создание списка)
 # Создай список fruits с тремя элементами: "apple", "banana" и "orange". Затем выведи его на экран.
+from operator import index
+from os import remove
 
 fruits = ["apple", "banana", "orange"]
 
@@ -82,6 +84,56 @@ print(numbers)
 data = ["temp", "log", "backup", "cache"]
 data.clear()
 print(data)
+
+# Задача 1 (Добавление элементов в список)
+# Дан список:
+# python
+
+numbers = [10, 20, 30]
+numbers.append(40)
+numbers.insert(0,5)
+print(numbers)
+
+# Задача 2 (Срезы списка)
+# Дан список:
+# python
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f']
+slice_1 = letters[2:5]
+slice_2 = letters[::2]
+print(slice_1)
+print(slice_2)
+
+# Задача 3 (Удаление элементов из списка)
+# Дан список:
+# python
+
+colors = ['red', 'blue', 'green', 'yellow', 'black', 'white']
+colors.remove("green")
+colors.pop(3)
+print(colors)
+
+# Задача 4 (Слияние списков)
+# Дан два списка:
+# python
+
+list1 = [1, 2, 3]
+list2 = ['a', 'b', 'c']
+
+merged_list = list1 + list2
+print(merged_list)
+
+# Задача 5 (Замена элементов в списке)
+# Дан список:
+# python
+
+items = [10, 20, 30, 40, 50]
+index = items.index(30)
+items[index] = "тридцать"
+items[1] = 'двадцать'
+print(items)
+
+
 
 
 
