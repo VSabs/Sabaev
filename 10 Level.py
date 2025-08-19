@@ -219,24 +219,169 @@ my_smartphone.play_game()
 my_smartphone.make_call()
 my_smartphone.take_photo()
 
+# Задача 1. Простое наследование
+# Создай:
+# Класс-родитель Vehicle (транспорт):
+# Атрибуты в __init__: brand (марка), year (год выпуска).
+# Метод show_info(), который выводит: "Марка: {brand}, Год: {year}".
+# Класс-наследник Car (машина):
+# Добавляет атрибут color (цвет) в __init__.
+# Переопределяет метод show_info(), чтобы он выводил: "Марка: {brand}, Год: {year}, Цвет: {color}".
+# Задание:
+# Создай объект my_car = Car("Toyota", 2020, "красный").
+# Вызови my_car.show_info().
+
+class Vehicle:
+
+    def __init__(self, brand, year):
+        self.brand = brand
+        self.year = year
+
+    def show_info(self):
+        print(f"Марка: {self.brand}, Год: {self.year}")
 
 
+class Car(Vehicle):
+
+    def __init__(self, brand, year, color):
+        super().__init__(brand, year)
+        self.color = color
+
+    def show_info(self):
+        print(f"Марка: {self.brand}, Год: {self.year}, Цвет: {self.color}")
 
 
+my_car = Car("Toyota", 2020, "красный")
+my_car.show_info()
+
+# Задача 2. Наследование и super()
+# Создай:
+# Класс-родитель Person:
+# Атрибуты в __init__: name (имя), age (возраст).
+# Метод greet(), который выводит: "Привет, меня зовут {name}!".
+# Класс-наследник Student:
+# Добавляет атрибут student_id (номер студенческого) в __init__.
+# Переопределяет greet():
+# Сначала вызывает метод greet() родителя через super().
+# Затем выводит: "Мой студенческий номер: {student_id}".
+# Задание:
+# Создай объект student = Student("Алексей", 20, "ABC123").
+# Вызови student.greet().
+
+class Person:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        print(f"Привет, меня зовут {self.name}!")
 
 
+class Student(Person):
+
+    def __init__(self,name, age, student_id):
+        super().__init__(name, age)
+        self.student_id = student_id
+
+    def greet(self):
+        super().greet()
+        print(f"Мой студенческий номер: {self.student_id}")
 
 
+student = Student("Алексей", 20, "ABC123")
+student.greet()
+
+# Задача 3. Базовое наследование методов
+# Создай:
+# Класс-родитель Animal:
+# Метод make_sound(): выводит "Этот звук не определен".
+# Класс-наследник Cat:
+# Переопредели make_sound(): выводит "Мяу!".
+# Задание:
+# Создай объект cat = Cat().
+# Вызови cat.make_sound().
+
+class Animal:
+
+    def make_sound(self):
+        print("Этот звук не определен")
 
 
+class Cat(Animal):
+
+    def make_sound(self):
+        print("Мяу!")
 
 
+cat = Cat()
+cat.make_sound()
+
+# Задача 4. Наследование с дополнительными методами
+# Создай:
+# Класс-родитель Vehicle:
+# Метод start_engine(): выводит "Двигатель запущен"
+# Класс-наследник ElectricCar:
+# Добавь новый метод charge_battery(): выводит "Батарея заряжается"
+# Переопредели start_engine(): пусть выводит "Электродвигатель запущен"
+# Задание:
+# Создай объект tesla = ElectricCar()
+# Вызови оба метода: tesla.start_engine() и tesla.charge_battery()
+
+class Vehicle:
+
+    def start_engine(self):
+        print(f"Двигатель запущен")
 
 
+class ElectricCar(Vehicle):
+
+    def charge_battery(self):
+        print(f"Батарея заряжается")
+
+    def start_engine(self):
+        print(f"Электродвигатель запущен")
+
+tesla = ElectricCar()
+tesla.start_engine()
+tesla.charge_battery()
+
+# Задача 5. Наследование и расширение метода
+# Создай:
+# Класс-родитель Device:
+# Атрибуты: model (модель) в __init__.
+# Метод info(): выводит "Модель: {model}".
+# Класс-наследник SmartDevice:
+# Добавь атрибут os (операционная система) в __init__.
+# Переопредели info():
+# Вызови метод info() родителя через super().
+# Добавь вывод "ОС: {os}".
+# Задание:
+# Создай объект phone = SmartDevice("Pixel", "Android").
+# Вызови phone.info().
+
+class Device:
+
+    def __init__(self, model):
+        self.model = model
+
+    def info(self):
+        print(f"Модель: {self.model}")
 
 
+class SmartDevice(Device):
+
+    def __init__(self,model, os):
+        super().__init__(model)
+        self.os = os
+
+    def info(self):
+        super().info()
+        print(f"ОС: {self.os}")
 
 
+phone = SmartDevice("Pixel", "Android")
+phone.info()
 
 
 
